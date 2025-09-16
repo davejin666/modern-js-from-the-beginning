@@ -40,3 +40,8 @@ btn.addEventListener('click', (e) => {
 btn.addEventListener('click', (e) => {
     console.log('Event listener 2 called.');
 });
+
+document.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+    console.log('Right clicked!');
+});
